@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://kit.fontawesome.com/2919964776.js" crossorigin="anonymous"></script>
+  <script src="./apps.js" defer></script>
+  <title>Commercial Paint</title>
+</head>
+<body>
+  <nav id="index_nav" class="">
+    <div class="nav__container">
+      <a href="./index.html" class="logo__number">
+        <img src="./assets/CV__logo.webp" alt="company logo" class="nav__logo--img--gen">
+        MHIC #155131
+      </a>
+
+      <ul class="nav__link--list">
+        <li><a href="./index.html#company_welcome" class="nav__link">About Us</a></li>
+        <li><a href="./index.html#services" class="nav__link">Services</a></li>
+        <li><a href="./index.html#customer_reviews" class="nav__link">Reviews</a></li>
+        <li><a href="./index.html#portfolio" class="nav__link">Portfolio</a></li>
+      </ul>
+
+      <button class="btn__menu" onclick="openMenu()">
+        <i class="fas fa-bars hamburger__menu"></i>
+      </button>
+
+      <div class="menu__backdrop">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+          <i class="fas fa-times x__btn"></i>
+        </button>
+
+        <ul>
+          <li class="menu__list">
+            <a href="./index.html#company_welcome" class="menu__link" onclick="closeMenu()">About Us</a>
+          </li>
+
+          <li class="menu__list">
+            <a href="./index.html#services" class="menu__link" onclick="closeMenu()">Services</a>
+          </li>
+
+          <li class="menu__list">
+            <a href="./index.html#customer_review" class="menu__link" onclick="closeMenu()">Reviews</a>
+          </li>
+          <li class="menu__list">
+            <a href="./index.html#portfolio" class="menu__link" onclick="closeMenu()">Portfolio</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="paint__page">
+    <div class="paint__display">
+      <figure class="commercial_image--wrapper"></figure>
+
+      <div class="residential_info--container">
+        <h1 class="page__title">Commercial Painting</h1>
+        <p class="page__para">
+          Serving businesses by painting indoor or outdoor spaces.
+        </p>
+      </div>
+
+      <div class="arrow__down--wrapper phone_arrow--wrapper">
+        <a href="#residential_interior" class="arrow__link"><i class="fa-solid fa-arrow-down arrow"></i></a>
+      </div>
+    </div>
+
+    <a href="tel:240-506-8317" class="phone_link">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <a href="mailto:info@cvpaintingservicesllc.com" class="mail_link">
+      <i class="fa-regular fa-envelope mail"></i>
+    </a>
+  </section>
+
+
+
+  <section id="residential_interior">
+    <div class="container color__container">
+      <div class="row">
+        <div class="residential_interior__container">
+          <figure class="interior__img--wrapper">
+            <img src="./assets/commercial_interior.jpeg" alt="" class="residential_img">
+          </figure>
+
+          <div class="residential_interior__info--container commercial_info--container">
+            <h2 class="residential--h2">Interior Painting</h2>
+
+            <p class="residential_interior--para">
+              Provide a fresh, vibrant, and 
+              professional look to interior surfaces, 
+              contributing to an inviting and appealing atmosphere 
+              for employees, clients, and visitors.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="residential_exterior">
+    <div class="container color__container">
+      <div class="row">
+        <div class="residential_exterior__container">
+          <figure class="interior__img--wrapper">
+            <img src="https://cdn.majorpaintingco.com/images/blog/images/2019/september/3-things-to-consider-when-painting-your-commercial-buildings-exterior.jpeg" alt="" class="residential_img">
+          </figure>
+
+          <div class="residential_interior__info--container commercial_info--container">
+            <h2 class="residential--h2">Exterior Painting</h2>
+
+            <p class="residential_interior--para">
+              enhance the building's curb appeal but also 
+              protect against weather-related damage, and moisture. 
+              Helps contribute to creating a professional and inviting appearance for 
+              businesses and organizations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="timeline">
+    <div class="container">
+      <div class="row">
+        <div class="timeline__container">
+          <h2 class="residential--h2">
+            Here is a timeline of a project
+          </h2>
+
+          <div class="special_services--container timeline__wrapper">
+            <div class="interior_timeline--box">
+              <div class="special_service--box">
+                <div class="icon--box">
+                  <i class="fa-solid fa-file-pen"></i>
+                </div>
+                
+                <div class="special_service--info">
+                  <h3>
+                    Project discussion
+                  </h3>
+                  <p class="special_service__info--para timeline__width">
+                    discuss the details of a project;
+                    colors, sections of building, special services, price, etc.  
+                  </p>
+                </div>
+              </div>
+              
+              <div class="special_service--box">
+                <div class="icon--box">
+                  <i class="fa-solid fa-spray-can"></i>
+                </div>
+                
+                <div class="special_service--info">
+                  <h3>
+                    Surface Preperation
+                  </h3>
+                  <p class="special_service__info--para timeline__width">
+                    preparing surfaces by cleaning, patching, sanding,
+                    and priming before painting to ensure a smooth and
+                    flawless finish.  
+                  </p>
+                </div>
+              </div>
+              
+              <div class="special_service--box">
+                <div class="icon--box">
+                  <i class="fa-solid fa-paint-roller"></i>
+                </div>
+                
+                <div class="special_service--info">
+                  <h3>
+                    Painting
+                  </h3>
+                  <p class="special_service__info--para timeline__width">
+                    Painting all areas and do special finishes as discussed
+                    on contract. Do touch ups for a clean finish.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="special_service--box">
+                <div class="icon--box">
+                  <i class="fa-solid fa-broom"></i>
+                </div>
+                
+                <div class="special_service--info">
+                  <h3>
+                    Clean up
+                  </h3>
+                  <p class="special_service__info--para timeline__width">
+                    Remove any leftover materials 
+                    (paint buckets, mats, etc) 
+                    from the building.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="special_service--box">
+                <div class="icon--box">
+                  <i class="fa-solid fa-face-smile"></i>
+                </div>
+                
+                <div class="special_service--info">
+                  <h3>
+                    A happy customer
+                  </h3>
+                  <p class="special_service__info--para timeline__width">
+                    Enjoy a brand new building ready for success.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer>
+    <div class="estimate">
+      <p>
+        For a free estimate give us a call or send us an email!
+      </p>
+    </div>
+    <div class="container">
+      <div class="row">
+
+        <div class="footer__container--1">
+          <div class="footer_journey--box">
+            <h4>Join Our Journey</h4>
+            <p>
+              We invite you to join us in the colorful adventure 
+              that is C&V Painting Services LLC. Whether you're 
+              looking to revive your living space or give your 
+              business a fresh look, we're here to bring your 
+              vision to life. Contact us today for a free 
+              consultation. Let's paint your story together.
+            </p>
+          </div>
+
+          <div class="footer_contact--box">
+            <h4>Contact us</h4>
+            <a href="tel:240-506-8317" class="footer_link">(240)506-8317</a>
+            <a href="mailto:info@cvpaintingservicesllc.com" class="footer_link">info@cvpaintingservicesllc.com</a>
+          </div>
+
+          <div class="footer_service--box">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="./residential.html" class="footer_link">Residential Painting</a></li>
+              <li><a href="./commerical.html" class="footer_link">Commercial Painting</a></li>
+              <li><a href="./maintenance.html" class="footer_link">Maintenance</a></li>
+              <li><a href="./repairs.html" class="footer_link">Repairs</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <hr>
+
+        <p class="licensed">We hold the necessary licenses, are 
+          fully bonded, and maintain comprehensive 
+          insurance coverage for your peace of mind.
+        </p>
+
+        <div class="footer__container--2">
+          <div class="card--box">
+            <p>We accept:</p>
+            <img src="./assets/cards_accepted.png" alt="" class="card_accepted--img">
+          </div>
+
+          <p class="copyright">&copy;2023 C&V Painting Services LLC, All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
