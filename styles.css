@@ -543,8 +543,9 @@ nav {
 
 
 /* cleaning service backdrop */
-.cleaning_service--backdrop,
-#coupon {
+
+/* #coupon */
+.cleaning_service--backdrop {
   position: fixed;
   border: 1px solid #ccc;
   top: 50%;
@@ -563,19 +564,19 @@ nav {
 }
 
 
-#coupon {
+/* #coupon {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
-}
+} */
 
-.coupon--offer,
+/* .coupon--offer,
 .coupon--code {
   font-size: 24px;
   font-weight: 700;
-}
+} */
 
 .cleaning_service--backdrop p {
   line-height: 1.5rem;
@@ -1513,10 +1514,10 @@ index_nav--gen .nav__link {
     font-size: 12px;
   }
 
- #coupon .coupon--code,
+ /* #coupon .coupon--code,
  #coupon .coupon--offer {
     font-size: 14px;
-  }
+  } */
 }
 
 @media (max-width: 500px) {
