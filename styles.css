@@ -74,7 +74,6 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  border: 1px solid red;
   width: 100%;
   z-index: 100;
   padding: 12px 24px;
@@ -167,9 +166,47 @@ nav {
 #service_btn {
   background-color: var(--yellow-color);
   color: #000;
+  transition: color 300ms ease, background-color 300ms ease;
 }
 
 #contact_btn {
   border: 1px solid #fff;
   color: #fff;
+  transition: color 300ms ease, background-color 300ms ease;
 }
+
+#service_btn:hover,
+#contact_btn:hover {
+  background-color: var(--black-color);
+  color: #fff;
+  border-color: var(--black-color);
+}
+
+#arrow-icon {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  scale: 0.6;
+  border: 1px solid #fff;
+  width: 100px;
+  height: 100px;
+  padding: 24px;
+  border-radius: 100px;
+  animation: float 2s ease-in-out infinite;
+}
+
+#arrow-icon:hover #arrow,
+#arrow-icon:hover {
+  fill: var(--yellow-color);
+  border: 1px solid var(--yellow-color);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
