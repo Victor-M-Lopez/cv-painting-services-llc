@@ -31,6 +31,11 @@
   scroll-behavior: smooth;
   letter-spacing: 2.5px;
   line-height: 1.3rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--black-color);
 }
 
 li {
@@ -55,7 +60,7 @@ svg {
   padding: 4rem 0;
 }
 
-row {
+.row {
   padding: 0 24px;
   margin: 0 auto;
   max-width: 1200px;
@@ -66,6 +71,10 @@ row {
   inset: 0;
   background-color: #000;
   opacity: 0.4;
+}
+
+.white-text {
+  color: #fff;
 }
 
 /* nav */
@@ -172,7 +181,7 @@ nav {
 #contact_btn {
   border: 1px solid #fff;
   color: #fff;
-  transition: color 300ms ease, background-color 300ms ease;
+  transition: color 300ms ease, background-color 300ms ease, border-color 300ms ease;
 }
 
 #service_btn:hover,
@@ -210,3 +219,10 @@ nav {
   }
 }
 
+
+/* about */
+.heading-1::after {
+  content: url('assets/rectangle-shape.svg');
+  vertical-align: -4px;
+  margin-left: 12px;
+}
