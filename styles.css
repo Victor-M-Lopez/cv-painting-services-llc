@@ -41,6 +41,10 @@ a {
   text-decoration: none;
 }
 
+svg {
+  display: block;
+}
+
 :root {
   --yellow-color: #FFF956;
   --light-yellow-color: #FFFED7;
@@ -64,7 +68,50 @@ row {
   opacity: 0.4;
 }
 
+/* nav */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 1px solid red;
+  width: 100%;
+  z-index: 100;
+  padding: 12px 24px;
+}
+
+.nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#company_logo {
+  width: 75px;
+}
+
+.nav_list {
+  display: flex;
+  gap: 32px;
+}
+
+.nav_link {
+  color: #fff;
+}
+
+.nav_contact-container {
+  background-color: var(--light-yellow-color);
+  border-radius: 12px;
+  padding: 8px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 24px;
+}
 /* home */
+
+
 #home {
   position: relative;
   width: 100%;
