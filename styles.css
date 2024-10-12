@@ -46,7 +46,7 @@ a {
   text-decoration: none;
 }
 
-svg {
+svg,img {
   display: block;
 }
 
@@ -63,7 +63,7 @@ svg {
 .row {
   padding: 0 24px;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1600px;
 }
 
 .overlay {
@@ -73,8 +73,17 @@ svg {
   opacity: 0.4;
 }
 
-.white-text {
+.heading {
   color: #fff;
+  margin-bottom: 80px;
+}
+
+.sub-headings {
+  margin-bottom: 12px;
+}
+
+.centered-heading {
+  text-align: center;
 }
 
 /* nav */
@@ -108,7 +117,7 @@ nav {
 }
 
 .nav_contact-container {
-  background-color: var(--light-yellow-color);
+  background-color: var(--black-color);
   border-radius: 12px;
   padding: 8px 24px;
 
@@ -117,6 +126,7 @@ nav {
   justify-content: space-evenly;
   gap: 24px;
 }
+
 /* home */
 
 
@@ -221,8 +231,112 @@ nav {
 
 
 /* about */
+.heading-1 {
+  font-size: 24px;
+}
+
 .heading-1::after {
   content: url('assets/rectangle-shape.svg');
   vertical-align: -4px;
   margin-left: 12px;
+}
+
+.about_container {
+  display: flex;
+  gap: 32px;
+  width: 100%;
+  align-items: center;
+
+}
+
+.about_text-container {
+  color: #fff;
+  font-size: 14px;
+  width: 45%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.about_text-container p {
+  margin-bottom: 32px;
+}
+
+.about_img-wrapper {
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.about_img {
+  width: 100%;
+}
+
+.rectangle-1,
+.rectangle-2 {
+  position: absolute;
+  width: 8px;
+  background-color: var(--black-color);
+  z-index: 100;
+}
+
+.rectangle-1 {
+  top: 0;
+  left: 100px;
+  bottom: 0;
+}
+
+.rectangle-2 {
+  top: 0;
+  bottom: 0;
+  right: 200px;
+}
+
+.location_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.locations {
+  width: calc(100%/2.2);
+  padding: 4px;
+  transition: color 500ms ease;
+}
+
+.locations:hover {
+  color: var(--yellow-color);
+}
+
+/* keypoints */
+
+.keypoints-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.keypoint-experience {
+  color: var(--yellow-color);
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.keypoint-box {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+}
+
+.keypoint-text {
+  color: #fff;
+  text-align: center;
+}
+
+#keypoint-icon {
+  width: 30px;
 }
