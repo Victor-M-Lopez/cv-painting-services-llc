@@ -183,17 +183,18 @@ nav {
   gap: 24px;
 }
 
-#service_btn,
+.light_green-btn,
 #contact_btn {
   padding: 16px 32px;
   border-radius: 12px;
   font-weight: 300;
 }
 
-#service_btn {
+.light_green-btn {
   background-color: var(--yellow-color);
+  border: 1px solid var(--yellow-color);
   color: #000;
-  transition: color 300ms ease, background-color 300ms ease;
+  transition: color 300ms ease, background-color 300ms ease, border 300ms ease;
 }
 
 #contact_btn {
@@ -202,11 +203,11 @@ nav {
   transition: color 300ms ease, background-color 300ms ease, border-color 300ms ease;
 }
 
-#service_btn:hover,
+.light_green-btn:hover,
 #contact_btn:hover {
   background-color: var(--black-color);
   color: #fff;
-  border-color: var(--black-color);
+  border: 1px solid #ffffff;
 }
 
 #arrow-icon {
@@ -286,7 +287,7 @@ nav {
 .rectangle-1,
 .rectangle-2 {
   position: absolute;
-  width: 12px;
+  width: 4px;
   background-color: var(--black-color);
   z-index: 100;
 }
@@ -481,4 +482,13 @@ nav {
 
 .review-text {
   text-align: center;
+}
+
+.review_container {
+  margin-top: 56px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
 }
