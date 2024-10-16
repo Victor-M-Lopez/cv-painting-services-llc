@@ -443,33 +443,35 @@ nav {
 
 
 /* testimonials */
-.testimonial_row {
+.testimonial_row,
+.past_projects-row {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.review_carousel {
+.review_carousel,
+.past_projects-carousel {
   margin-top: 80px;
   width: 100%;
   max-width: 840px;
   display: flex;
-  gap: 4px;
+  gap: 8px;
   overflow: auto;
   scroll-snap-type: x mandatory;
   scrollbar-color: transparent;
   border-radius: 12px;
 }
 
-.review_carousel::-webkit-scrollbar {
+.review_carousel::-webkit-scrollbar,
+.past_projects-carousel::-webkit-scrollbar {
   display: none;
 }
 
 .comment-box {
   background-color: var(--light-yellow-color);
   width: 800px;
-  height: 400px;
-  border: 1px solid green;
+  height: 500px;
   flex-shrink: 0;
   scroll-snap-align: start;
   border-radius: 12px;
@@ -491,4 +493,48 @@ nav {
   flex-direction: column;
   gap: 24px;
   align-items: center;
+}
+
+.picture-box {
+  padding: 0;
+  width: 600px;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.project_img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.past_projects-carousel {
+  width: 650px;
+  height: 500px;
+}
+
+.contact_row {
+  width: 90%;
+  background-color: var(--yellow-color);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.contact_container {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.phone,
+.form,
+.mail {
+  color: #000;
+}
+
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
