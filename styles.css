@@ -390,7 +390,9 @@ nav {
 
 .paint_img {
   background-image: url('assets/kitchen-painted-white.webp');
+  transition: scale 300ms ease;
 }
+
 
 .repair_img {
   background-image: url('assets/repair-services-residential-commercial\ 1.webp');
@@ -402,6 +404,32 @@ nav {
 
 .clean_img {
   background-image: url('assets/window-cleaning-service.webp');
+  cursor: pointer;
+  transition: scale 300ms ease;
+}
+
+.service_type-container {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  bottom: -10px;
+  left: 2px;
+  right: 2px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: opacity 500ms ease, bottom 500ms ease;
+}
+
+.paint_img:hover .service_type-container {
+  opacity: 1;
+  bottom: 12px;
+}
+
+.service_type {
+  color: #fff;
 }
 
 #service-icon {
@@ -430,7 +458,9 @@ nav {
   transition: scale 300ms ease;
 }
 
-.service_link:hover {
+.service_link:hover,
+.paint_img:hover,
+.clean_img:hover {
   scale: 0.98;
 }
 
