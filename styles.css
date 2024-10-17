@@ -513,6 +513,8 @@ nav {
   height: 500px;
 }
 
+/* contact */
+
 .contact_row {
   width: 90%;
   background-color: var(--yellow-color);
@@ -537,4 +539,60 @@ nav {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+/* footer */
+footer {
+  position: relative;
+  background-color: var(--light-yellow-color);
+  padding: 24px;
+}
+
+.footer_row {
+  position: relative;
+  display: flex;
+  gap: 56px;
+}
+
+.footer_list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.list_name {
+  margin-bottom: 12px;
+}
+
+.footer_link {
+  color: #000;
+}
+
+.footer-wrapper {
+  position: absolute;
+  right: 24px;
+  width: 650px;
+  text-align: end;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_img {
+  width: 150px;
+  align-self: flex-end;
+  margin-top: 8px;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  font-size: 12px;
 }
