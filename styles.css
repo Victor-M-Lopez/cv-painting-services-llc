@@ -137,13 +137,15 @@ nav {
 }
 
 /* home */
-
-
 #home {
+  background-image: url('/assets/living-room-with-white-walls-and-furniture.webp');
+}
+
+#home,
+#service_home {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url('/assets/living-room-with-white-walls-and-furniture.webp');
   background-position: center;
   background-size: cover;
 }
@@ -184,7 +186,8 @@ nav {
 }
 
 .light_green-btn,
-#contact_btn {
+#contact_btn,
+#service_contact-btn {
   padding: 16px 32px;
   border-radius: 12px;
   font-weight: 300;
@@ -629,4 +632,93 @@ footer {
   bottom: 2px;
   right: 2px;
   font-size: 12px;
+}
+
+/* residential */
+.residential_img {
+  background-image: url('assets/kitchen-painted-white.webp');
+}
+
+.service_home-btn {
+  border: 1px solid red;
+}
+
+.service-h2 {
+  margin-bottom: 32px;
+}
+
+/* interior services */
+.interior_service-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service_text-container {
+  border: 1px solid green;
+  width: 45%;
+}
+
+.service_text-container {
+  color: #fff;
+  font-size: 14px;
+}
+
+.service_text {
+  margin: 4px 0 12px 0;
+  width: 80%;
+}
+
+.interior_img-wrapper {
+  width: 45%;
+}
+
+.interior_img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.special_service {
+  position: relative;
+  background-color: var(--light-yellow-color);
+  color: #000;
+  width: 350px;
+  padding: 24px 16px;
+  margin-top: 32px;
+  border-radius: 8px;
+  height: 70px;
+  transition: height 400ms ease;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.special_service:hover {
+  cursor: pointer;
+}
+
+.height_change {
+  height: 200px;
+  align-items: start;;
+}
+
+#plus_icon {
+  transition: rotate 300ms ease;
+  transition: transform 300ms ease ;
+}
+
+.plus_icon-rotate {
+  transform: rotate(45deg);
+}
+
+.service_hidden {
+  position: absolute;
+  bottom: 24px;
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+
+.text_appear {
+  opacity: 1;
+  transition: opacity 800ms ease;
 }

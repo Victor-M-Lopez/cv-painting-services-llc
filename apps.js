@@ -8,3 +8,10 @@ function insertEmail () {
 }
 
 window.onload = insertEmail;
+
+let specialService = document.querySelectorAll('.special_service');
+let plusIcon = document.querySelectorAll('plus_icon');
+let specialServiceText = document.querySelectorAll('.service_hidden');
+
+
+
