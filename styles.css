@@ -729,4 +729,32 @@ footer {
   transition: opacity 800ms ease, visibility 800ms;
 }
 
-/* exterior */
+.color_img-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.color_img {
+  width: 100%;
+  object-fit: cover;
+  padding-top: -50px;
+}
+
+.color_text-container {
+  position: absolute;
+  top: 40px;
+  width: 650px;
+  right: 100px;
+  color: #fff;
+  text-align: end;
+}
+
+.color_text-container h3 {
+  font-size: 56px;
+}
+
+.color_text-container p {
+  text-align: end;
+}
