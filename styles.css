@@ -639,10 +639,6 @@ footer {
   background-image: url('assets/kitchen-painted-white.webp');
 }
 
-.service_home-btn {
-  border: 1px solid red;
-}
-
 .service-h2 {
   margin-bottom: 32px;
 }
@@ -650,11 +646,11 @@ footer {
 /* interior services */
 .interior_service-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .service_text-container {
-  border: 1px solid green;
   width: 45%;
 }
 
@@ -677,7 +673,9 @@ footer {
   border-radius: 12px;
 }
 
-.special_service {
+.special_service,
+.special_service-2,
+.special_service-3 {
   position: relative;
   background-color: var(--light-yellow-color);
   color: #000;
@@ -693,16 +691,20 @@ footer {
   align-items: flex-start;
 }
 
-.special_service:hover {
+.special_service:hover,
+.special_service-2:hover,
+.special_service-3:hover {
   cursor: pointer;
 }
 
 .height_change {
-  height: 200px;
+  height: 180px;
   align-items: start;;
 }
 
-#plus_icon {
+#plus_icon,
+#plus_icon-2,
+#plus_icon-3 {
   transition: rotate 300ms ease;
   transition: transform 300ms ease ;
 }
@@ -711,14 +713,20 @@ footer {
   transform: rotate(45deg);
 }
 
-.service_hidden {
+.service_hidden,
+.service_hidden-2, 
+.service_hidden-3 {
   position: absolute;
-  bottom: 24px;
+  top: 60px;
+  left: 16px;
+  right: 16px;
   opacity: 0;
-  transition: opacity 200ms ease;
+  visibility: hidden;
+  transition: opacity 200ms ease, visibility 200ms;
 }
 
 .text_appear {
   opacity: 1;
-  transition: opacity 800ms ease;
+  visibility: visible;
+  transition: opacity 800ms ease, visibility 800ms;
 }
