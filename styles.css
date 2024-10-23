@@ -758,3 +758,22 @@ footer {
 .color_text-container p {
   text-align: end;
 }
+
+.step_container {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.step {
+  color: #fff;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  width: 800px;
+}
+
+.step_icon {
+  width: 40px;
+}
