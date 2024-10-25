@@ -647,6 +647,10 @@ footer {
   background-image: url('assets/cabinet-repair-with-drill.webp');
 }
 
+.maintenance_img {
+  background-image: url('assets/maintenance_front.webp');
+}
+
 .service-h2 {
   margin-bottom: 32px;
 }
