@@ -634,9 +634,17 @@ footer {
   font-size: 12px;
 }
 
-/* residential */
+/* service images */
 .residential_img {
   background-image: url('assets/kitchen-painted-white.webp');
+}
+
+.commercial_img {
+  background-image: url('assets/white-office-space.webp');
+}
+
+.repair_img {
+  background-image: url('assets/cabinet-repair-with-drill.webp');
 }
 
 .service-h2 {
@@ -776,4 +784,11 @@ footer {
 
 .step_icon {
   width: 40px;
+}
+
+.line {
+  width: 80%;
+  height: 1px;
+  margin: 0 auto;
+  background-color: #ffffff50;
 }
