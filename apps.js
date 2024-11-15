@@ -8,3 +8,20 @@ function insertEmail () {
 }
 
 window.onload = insertEmail;
+
+
+let navBar = document.querySelector('nav');
+
+window.addEventListener('scroll', function () {
+  let navLinks = navBar.querySelectorAll('.nav_link');
+
+  for (let i = 0; i < navLinks.length; i++) {
+    if (window.scrollY > 100) {
+      navBar.classList.add('solid');
+      navLinks[i].classList.add('text_color');
+    } else {
+      navBar.classList.remove('solid');
+      navLinks[i].classList.remove('text_color');
+    }
+  }
+});

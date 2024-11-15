@@ -54,6 +54,10 @@ svg,img {
   display: block;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 :root {
   --yellow-color: #FFF956;
   --light-yellow-color: #FFFED7;
@@ -82,7 +86,7 @@ svg,img {
 }
 
 .sub-headings {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .centered-heading {
@@ -90,7 +94,7 @@ svg,img {
 }
 
 .shorten_heading {
-  width: 40%;
+  width: 60%;
   font-size: 14px;
   margin-top: 8px;
 }
@@ -104,6 +108,8 @@ nav {
   width: 100%;
   z-index: 100;
   padding: 12px 24px;
+  background-color: transparent;
+  transition: background-color 300ms ease;
 }
 
 .nav_container {
@@ -129,13 +135,18 @@ nav {
   background-color: var(--black-color);
   border-radius: 12px;
   padding: 8px 24px;
-
+  
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   gap: 24px;
 }
 
+.nav_btn {
+  background-color: transparent;
+  border: none;
+  display: none;
+}
 /* home */
 #home {
   background-image: url('/assets/living-room-with-white-walls-and-furniture.webp');
@@ -295,9 +306,9 @@ nav {
 .rectangle-1,
 .rectangle-2 {
   position: absolute;
-  width: 4px;
+  width: 16px;
   background-color: var(--black-color);
-  z-index: 100;
+  z-index: 80;
 }
 
 .rectangle-1 {
@@ -508,7 +519,7 @@ nav {
 
 .comment-box {
   background-color: var(--light-yellow-color);
-  width: 800px;
+  width: 95%;
   height: 500px;
   flex-shrink: 0;
   scroll-snap-align: start;
@@ -535,7 +546,7 @@ nav {
 
 .picture-box {
   padding: 0;
-  width: 600px;
+  width: 95%;
   overflow: hidden;
   background-color: transparent;
 }
@@ -544,11 +555,6 @@ nav {
   width: 100%;
   object-fit: cover;
   border-radius: 12px;
-}
-
-.past_projects-carousel {
-  width: 650px;
-  height: 500px;
 }
 
 /* contact */
@@ -583,7 +589,7 @@ nav {
 footer {
   position: relative;
   background-color: var(--light-yellow-color);
-  padding: 24px;
+  padding: 24px 0;
 }
 
 .footer_row {
@@ -611,9 +617,11 @@ footer {
   right: 24px;
   width: 650px;
   text-align: end;
+  top: 24px;
   
   display: flex;
   flex-direction: column;
+  align-items: end;
   gap: 24px;
 }
 
@@ -800,4 +808,121 @@ footer {
   height: 1px;
   margin: 0 auto;
   background-color: #ffffff50;
+}
+
+
+/* JS classes */
+.solid {
+  /* background-color: #2B2B2Bdd; */
+  background-color: var(--light-yellow-color);
+  transition: background-color 300ms ease;
+}
+
+.text_color {
+  color: #000;
+  transition: color 300ms ease;
+}
+
+/* 1060px */
+@media (max-width: 1060px) {
+  .nav_btn {
+    display: contents;
+  }
+
+  .nav_list {
+    display: none;
+  }
+
+  .about_container {
+    flex-direction: column-reverse;
+  }
+
+  .about_img-wrapper {
+    width: 100%;
+  }
+
+  .about_text-container {
+    width: 100%;
+  }
+
+  .locations {
+    width: calc(100% / 4);
+  }
+}
+
+/* 980px */
+@media (max-width: 980px) {
+  .footer_row {
+    flex-direction: column;
+  }
+
+  .shorten_heading {
+    width: 80%;
+  }
+}
+
+/* 880px */
+
+@media (max-width: 880px) {
+  .keypoints-container {
+    flex-direction: column;
+  }
+
+  .service-container {
+    grid-template-columns: repeat(1, 250px);
+  }
+
+  footer {
+    height: 800px;
+  }
+
+  .footer-wrapper {
+    left: 24px;
+    top: 550px;
+    width: 80%;
+    text-align: left;
+  }
+
+  .cards {
+    align-self: baseline;
+  }
+
+  .copyright {
+    text-align: center;
+    left: 2px;
+    right: 2px;
+  }
+
+  .locations {
+    width: calc(100% / 2);
+  }
+}
+
+/* 650px */
+@media (max-width: 650px) {
+  #arrow-icon {
+    scale: 0.4;
+  }
+
+  #contact_btn,
+  #service_contact-btn,
+  .light_green-btn {
+    padding: 8px 16px;
+  }
+
+  #web_title {
+    font-size: 32px;
+  }
+
+  .text_container h2 {
+    font-size: 14px;
+  }
+
+  .heading-1 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
 }
