@@ -217,18 +217,6 @@ nav {
   transition: color 300ms ease, background-color 300ms ease, border-color 300ms ease;
 }
 
-.light_green-btn:hover {
-  background-color: transparent;
-  color: #fff;
-  border: 1px solid #ffffff;
-}
-
-#contact_btn:hover {
-  background-color: var(--yellow-color);
-  color: #000;
-  border: none;
-}
-
 .arrow_link {
   position: absolute;
   bottom: 24px;
@@ -932,7 +920,7 @@ footer {
   }
 
   #company_logo {
-    width: 50px;
+    width: 60px;
   }
 
   nav {
