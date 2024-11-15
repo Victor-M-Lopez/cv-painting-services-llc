@@ -229,10 +229,13 @@ nav {
   border: none;
 }
 
-#arrow-icon {
+.arrow_link {
   position: absolute;
   bottom: 24px;
   right: 24px;
+}
+
+#arrow-icon {
   scale: 0.6;
   border: 1px solid #fff;
   width: 100px;
@@ -922,7 +925,61 @@ footer {
     font-size: 16px;
   }
 
-  p {
+  p, a, button {
     font-size: 14px;
+  }
+
+  .nav_icon {
+    width: 18px;
+  }
+
+  #company_logo {
+    width: 50px;
+  }
+
+  nav {
+    padding: 12px;
+  }
+
+  .text_container {
+    bottom: 275px;
+  }
+
+  .home_line {
+    bottom: 250px;
+  }
+
+  .buttons_container {
+    bottom: 125px;
+    flex-direction: column;
+    right: 24px;
+  }
+
+  #arrow-icon {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .arrow_link {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .rectangle-2 {
+    right: 60px;
+  }
+
+  .rectangle-1,
+  .rectangle-2 {
+    width: 4px;
+  }
+  
+  .contact_row {
+    width: 95%;
+    padding: 12px;
+  }
+
+  .contact_icon {
+    width: 14px;
   }
 }
