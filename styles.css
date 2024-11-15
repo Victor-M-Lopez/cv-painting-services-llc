@@ -816,7 +816,6 @@ footer {
 
 /* JS classes */
 .solid {
-  /* background-color: #2B2B2Bdd; */
   background-color: var(--light-yellow-color);
   transition: background-color 300ms ease;
 }
