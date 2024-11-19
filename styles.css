@@ -759,6 +759,7 @@ footer {
 .color_img {
   width: 100%;
   object-fit: cover;
+  object-position: left;
   padding-top: -50px;
 }
 
@@ -841,6 +842,29 @@ footer {
   .locations {
     width: calc(100% / 4);
   }
+
+  .interior_service-container,
+  .exterior_service-container {
+    flex-direction: column-reverse;
+    gap: 32px;
+    justify-content: center;
+  }
+
+  .service_text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .service_text {
+    width: 80%;
+    text-align: center;
+  }
+
+  .interior_img-wrapper {
+    width: 100%;
+  }
 }
 
 /* 980px */
@@ -888,6 +912,27 @@ footer {
 
   .locations {
     width: calc(100% / 2);
+  }
+
+  .step {
+    width: 100%;
+  }
+
+  .color_text-container {
+    right: 24px;
+    width: 90%;
+  }
+
+  .color_text-container h3 {
+    font-size: 24px;
+  }
+
+  .color_img-wrapper {
+    height: 400px;
+  }
+
+  .color_img {
+    height: 400px;
   }
 }
 
