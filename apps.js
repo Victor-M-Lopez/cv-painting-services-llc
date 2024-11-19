@@ -38,3 +38,18 @@ for (let i = 0; i < specialService.length; i++) {
     specialServiceText[i].classList.toggle('text_appear');
   })
 }
+
+
+let exitBtn = document.querySelector('.exit_btn');
+let modalBtn = document.querySelector('.nav_btn');
+
+modalBtn.addEventListener('click', function() {
+  modalBtn.classList.add('btn_hidden');
+  exitBtn.classList.add('btn_appear');
+});
+
+exitBtn.addEventListener('click', function() {
+  modalBtn.classList.remove('btn_hidden');
+  exitBtn.classList.remove('btn_appear');
+  
+});

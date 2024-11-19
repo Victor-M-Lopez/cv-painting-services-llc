@@ -106,7 +106,7 @@ nav {
   left: 0;
   right: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 90;
   padding: 12px 24px;
   background-color: transparent;
   transition: background-color 300ms ease;
@@ -146,7 +146,64 @@ nav {
   background-color: transparent;
   border: none;
   display: none;
+  z-index: 90;
 }
+
+/* MODAL */
+#modal {
+  position: absolute;
+  inset: 0;
+  background-color: var(--light-yellow-color);
+  z-index: 80;
+}
+
+.modal_line {
+  width: 80%;
+  height: 1px;
+  background-color: #00000050;
+  margin: 24px 0;
+}
+
+.modal_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding: 0 24px;
+}
+
+.modal_list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal_list li {
+  text-align: end;
+}
+
+.modal_link {
+  color: #000;
+}
+
+.exit_btn {
+  position: absolute;
+  top: 24px;
+  right: 52px;
+  border: none;
+  background-color: transparent;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.exit {
+  width: 18px;
+}
+
 /* home */
 #home {
   background-image: url('assets/living-room-with-white-walls-and-furniture.webp');
@@ -799,6 +856,10 @@ footer {
   width: 40px;
 }
 
+.hand_shake {
+  width: 28px;
+}
+
 .line {
   width: 80%;
   height: 1px;
@@ -815,6 +876,16 @@ footer {
 .text_color {
   color: #000;
   transition: color 300ms ease;
+}
+
+.btn_appear {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn_hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 
 /* 1060px */
@@ -965,7 +1036,8 @@ footer {
     font-size: 12px;
   }
 
-  .nav_icon {
+  .nav_icon,
+  .modal_btn {
     width: 18px;
   }
 
@@ -974,7 +1046,7 @@ footer {
   }
 
   nav {
-    padding: 12px;
+    padding: 12px 8px;
   }
 
   .text_container {
@@ -1025,5 +1097,14 @@ footer {
 
   .review_container p {
     text-align: center;
+  }
+
+  .exit_btn {
+    right: 32px;
+    top: 26px;
+  }
+
+  .exit {
+    width: 14px;
   }
 }
