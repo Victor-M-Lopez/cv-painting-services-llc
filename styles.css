@@ -106,7 +106,7 @@ nav {
   left: 0;
   right: 0;
   width: 100%;
-  z-index: 90;
+  z-index: 100;
   padding: 12px 24px;
   background-color: transparent;
   transition: background-color 300ms ease;
@@ -151,10 +151,16 @@ nav {
 
 /* MODAL */
 #modal {
-  position: absolute;
+  position: fixed;
   inset: 0;
   background-color: var(--light-yellow-color);
-  z-index: 80;
+  z-index: 90;
+  transition: visibility 500ms ease, opacity 500ms ease;
+}
+
+.hide_modal {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .modal_line {
