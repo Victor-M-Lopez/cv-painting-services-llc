@@ -967,12 +967,12 @@ footer {
   }
 
   footer {
-    height: 824px;
+    height: 850px;
   }
 
   .footer-wrapper {
     left: 24px;
-    top: 550px;
+    top: 575px;
     width: 80%;
     text-align: left;
   }
@@ -1026,7 +1026,14 @@ footer {
   }
 
   #web_title {
-    font-size: 32px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .text_container {
+    left: 24px;
+    right: 24px;
+    text-align: center;
   }
 
   .text_container h2 {
