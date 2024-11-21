@@ -106,7 +106,7 @@ nav {
   left: 0;
   right: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 98;
   padding: 12px 24px;
   background-color: transparent;
   transition: background-color 300ms ease;
@@ -438,6 +438,7 @@ nav {
 }
 
 .service-container {
+  position: relative;
   margin-top: 80px;
   display: grid;
   grid-template-columns: repeat(2, 250px);
@@ -520,7 +521,6 @@ nav {
   right: 4px;
   text-align: center;
   color: #fff;
-  /* transform: translateX(-50%); */
 }
 
 .service_overlay {
@@ -542,6 +542,42 @@ nav {
   top: 100px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.cleaning_modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 500px;
+  color: #000;
+  padding: 24px;
+  border-radius: 12px;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 400ms ease, visibility 400ms ease;
+}
+
+.clean_exit-btn {
+  z-index: 100;
+  position: fixed;
+  right: 32px;
+  top: 32px;
+  border: none;
+  background-color: transparent;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cleaning_overlay {
+  position: fixed;
+  inset: 0;
+  background-color: #00000090;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
 }
 
 
@@ -893,6 +929,12 @@ footer {
   opacity: 0;
   visibility: hidden;
 }
+
+.show_modal {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 /* 1060px */
 @media (max-width: 1060px) {

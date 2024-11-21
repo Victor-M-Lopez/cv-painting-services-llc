@@ -65,3 +65,25 @@ function modalHide() {
   exitBtn.classList.remove('btn_appear');
   modal.classList.add('hide_modal');
 } 
+
+
+let cleaningService = document.getElementById('cleaning_service');
+let cleaningModal = document.querySelector('.cleaning_modal');
+let serviceExitBtn = document.querySelector('.clean_exit-btn');
+let serviceOverlay = document.querySelector('.cleaning_overlay');
+
+cleaningService.addEventListener('click', function() {
+  serviceOverlay.classList.add('show_modal')
+  cleaningModal.classList.add('show_modal');
+  serviceExitBtn.classList.add('show_modal');
+});
+
+serviceExitBtn.addEventListener('click', exitCleanModal);
+serviceOverlay.addEventListener('click', exitCleanModal);
+
+
+function exitCleanModal() {
+  serviceOverlay.classList.remove('show_modal')
+  cleaningModal.classList.remove('show_modal');
+  serviceExitBtn.classList.remove('show_modal');
+}
