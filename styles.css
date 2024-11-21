@@ -563,8 +563,8 @@ nav {
 .clean_exit-btn {
   z-index: 100;
   position: fixed;
-  right: 32px;
-  top: 32px;
+  right: 24px;
+  top: 56px;
   border: none;
   background-color: transparent;
   opacity: 0;
@@ -1161,5 +1161,9 @@ footer {
 
   .exit {
     width: 14px;
+  }
+
+  .cleaning_modal {
+    width: 90%;
   }
 }
