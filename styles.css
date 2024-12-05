@@ -1043,12 +1043,14 @@ footer {
 
   .home_reviews-container {
     right: 0;
-    top: 80px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    width: 110px;
-    height: 225px;
+    width: 220px;
+    height: 110px;
     padding: 8px;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
   }
 
   .review-link {
@@ -1070,7 +1072,7 @@ footer {
   }
 
   .angi-img {
-    width: 50px;
+    width: 40px;
   }
 }
 
@@ -1256,6 +1258,6 @@ footer {
   }
 
   .home_reviews-container {
-    top: 56px;
+    top: 80px;
   }
 }
