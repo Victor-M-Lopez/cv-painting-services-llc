@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
-  letter-spacing: 2.5px;
 }
 
 body {
@@ -36,7 +35,7 @@ button:hover {
 
 :root {
   --yellow-color: #FFF956;
-  --light-yellow-color: #FFFED7;
+  --blue-color: #005C9D;
   --black-color: #2B2B2B;
 }
 
@@ -202,13 +201,19 @@ nav {
 
 .text_container {
   position: absolute;
-  bottom: 200px;
+  top: 35%;
   left: 24px;
   color: #fff;
+  width: 700px;
 }
 
 #web_title {
   font-size: 48px;
+}
+
+.reputation {
+  font-size: 10px;
+  font-weight: 300;
 }
 
 .text_container h2 {
@@ -217,19 +222,14 @@ nav {
 
 .home_line {
   position: absolute;
-  bottom: 160px;
-  background-color: #ffffff75;
+  bottom: 100px;
+  background-color: #fff;
   width: 100%;
   height: 1px;
 }
 
 .buttons_container {
-  position: absolute;
-  bottom: 24px;
-  left: 24px;
-  right: 100px;
-  height: 100px;
-
+  margin-top: 16px;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -238,14 +238,13 @@ nav {
 .light_green-btn,
 #contact_btn,
 #service_contact-btn {
-  padding: 16px 32px;
+  padding: 8px 12px;
   border-radius: 12px;
 }
 
 .light_green-btn {
-  background-color: var(--yellow-color);
-  border: 1px solid var(--yellow-color);
-  color: #000;
+  background-color: var(--blue-color);
+  color: #fff;
   transition: color 300ms ease, background-color 300ms ease, border 300ms ease;
 }
 
@@ -255,91 +254,50 @@ nav {
   transition: color 300ms ease, background-color 300ms ease, border-color 300ms ease;
 }
 
-.arrow_link {
+.home-reviews {
   position: absolute;
   bottom: 24px;
-  right: 24px;
-}
-
-#arrow-icon {
-  scale: 0.6;
-  border: 1px solid #fff;
-  width: 100px;
-  height: 100px;
-  padding: 24px;
-  border-radius: 100px;
-  animation: float 2s ease-in-out infinite;
-}
-
-#arrow-icon:hover #arrow,
-#arrow-icon:hover {
-  fill: var(--yellow-color);
-  border: 1px solid var(--yellow-color);
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-}
-
-
-.home_reviews-container {
-  width: 300px;
-  height: 200px;
-  position: absolute;
-  top: 180px;
-  right: 32px;
-  border-radius: 8px;
-  background-color: #ffffff25;
-  backdrop-filter: blur(2px);
-  padding: 24px;
+  left: 24px;
 
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  align-items: center;
+  gap: 32px;
 }
 
-.angi-review-wrapper,
-.home_review-wrapper {
+.review-container {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.home_review-icon {
+.review-icon {
   width: 50px;
 }
 
-.review-stars {
+.review-info {
   display: flex;
+  flex-direction: column;
   gap: 4px;
-}
-
-.review-link {
   color: #fff;
 }
 
-.angi-div-2 {
+.review_num {
+  color: #fff;
+}
+
+.stars {
   display: flex;
-  flex-direction: column;
-  align-items: start; 
-  gap: 2px; 
-  flex-wrap: nowrap; 
 }
 
-.angi-img {
-  width: 75px; 
-  height: auto;
-}
-
-.angi-star {
-  max-width: 170px; 
-  width: 100%; 
-  height: auto;
+.home-services {
+  position: absolute;
+  bottom: 32px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  color: #fff;
+  font-size: 12px;
 }
 
 /* about */
@@ -1015,40 +973,6 @@ footer {
   .interior_img-wrapper {
     width: 100%;
   }
-
-  .home_reviews-container {
-    right: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    width: 220px;
-    height: 110px;
-    padding: 8px;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: flex-start;
-  }
-
-  .review-link {
-    font-size: 12px;
-  }
-
-  .home_review-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .angi-div {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .home_review-icon {
-    width: 30px;
-  }
-
-  .angi-img {
-    width: 40px;
-  }
 }
 
 /* 980px */
@@ -1122,10 +1046,6 @@ footer {
 
 /* 650px */
 @media (max-width: 650px) {
-  #arrow-icon {
-    scale: 0.4;
-  }
-
   #contact_btn,
   #service_contact-btn,
   .light_green-btn {
@@ -1183,16 +1103,6 @@ footer {
     right: 24px;
   }
 
-  #arrow-icon {
-    right: 50%;
-    transform: translateX(50%);
-  }
-
-  .arrow_link {
-    right: 50%;
-    transform: translateX(50%);
-  }
-
   .rectangle-2 {
     right: 60px;
   }
@@ -1230,9 +1140,5 @@ footer {
 
   .cleaning_modal {
     width: 90%;
-  }
-
-  .home_reviews-container {
-    top: 80px;
   }
 }
