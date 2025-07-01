@@ -213,12 +213,8 @@ nav {
 }
 
 .reputation {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 300;
-}
-
-.text_container h2 {
-  font-size: 16px;
 }
 
 .home_line {
@@ -1029,6 +1025,7 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    width: 90%;
   }
 
   .buttons_container {
@@ -1055,12 +1052,33 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+
+  .testimonial-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .testimonial-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .review-btn-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* 700px */
+@media (max-width: 700px) {
+  #web_title {
+    font-size: 24px;
+  }
 }
 
 /* 650px */
 @media (max-width: 650px) {
-   
-
   .exit_btn {
     right: 32px;
     top: 26px;
@@ -1072,5 +1090,22 @@ footer {
 
   .cleaning_modal {
     width: 90%;
+  }
+
+  .buttons_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reputation {
+    font-size: 10px;
+  }
+
+  .service-container {
+    grid-template-columns: repeat(1, 250px);
+  }
+
+  .footer-row {
+    padding: 0px;
   }
 }
