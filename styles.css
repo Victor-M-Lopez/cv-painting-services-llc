@@ -14,7 +14,6 @@ body {
 
 li,p,span,a {
   list-style-type: none;
-  line-height: 1.5rem;
 }
 
 a {
@@ -58,20 +57,14 @@ button:hover {
 
 .heading {
   color: #fff;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .sub-headings {
   margin-bottom: 16px;
-}
-
-.centered-heading {
-  text-align: center;
-}
-
-.shorten_heading {
-  width: 60%;
-  font-size: 14px;
-  margin-top: 8px;
 }
 
 /* nav */
@@ -237,7 +230,7 @@ nav {
 
 .light_green-btn,
 #contact_btn,
-#service_contact-btn {
+#service_btn {
   padding: 8px 12px;
   border-radius: 12px;
 }
@@ -245,13 +238,15 @@ nav {
 .light_green-btn {
   background-color: var(--blue-color);
   color: #fff;
-  transition: color 300ms ease, background-color 300ms ease, border 300ms ease;
 }
 
 #contact_btn {
+  color: #fff;
+}
+
+#service_btn {
   border: 1px solid #fff;
   color: #fff;
-  transition: color 300ms ease, background-color 300ms ease, border-color 300ms ease;
 }
 
 .home-reviews {
@@ -301,6 +296,13 @@ nav {
 }
 
 /* about */
+.about-header {
+  color: #fff;
+  font-size: 48px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
 .heading-1 {
   font-size: 24px;
   margin-bottom: 32px;
@@ -337,48 +339,70 @@ nav {
   width: 100%;
 }
 
-.location_list {
+.social-media-about {
   display: flex;
-  gap: 16px;
 }
 
-.locations:hover {
-  color: var(--yellow-color);
+.social-media-link {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 /* keypoints */
+#keypoints {
+  background-color: var(--blue-color);
+}
 
-.keypoints-container {
+.card-container {
+  margin-top: 80px;
   display: flex;
-  justify-content: center;
-  gap: 24px;
 }
 
-.keypoint-experience {
-  color: var(--yellow-color);
-  font-size: 48px;
-  margin-top: 6px;
+.card {
+  background-color: #fff;
+  width: 320px;
+  height: 350px;
+  padding: 32px 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
 }
 
-.keypoint-box {
-  padding: 24px;
+.card_icon {
+  width: 75px;
+}
+
+.card_icon-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-
+  gap: 16px;
 }
 
-.keypoint-text {
-  color: #fff;
+.card-title {
+  font-weight: 500;
+}
+
+.card-sub-title {
+  color: #5F5F5F;
+  font-size: 12px;
+}
+
+.icon-info {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
-#keypoint-icon {
-  width: 30px;
+.card-text {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 300;
 }
-
 
 /* services */
 #services {
@@ -566,7 +590,8 @@ nav {
 
 .comment-box,
 .picture-box {
-  background-color: var(--light-yellow-color);
+  background-color: var(--blue-color);
+  color: #fff;
   width: 95%;
   flex-shrink: 0;
   scroll-snap-align: start;
