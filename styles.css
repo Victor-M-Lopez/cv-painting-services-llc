@@ -722,6 +722,49 @@ footer {
   color: #fff;
 }
 
+.service-title {
+  font-weight: 200;
+}
+
+.footer-link {
+  font-size: 12px;
+  color: #fff;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-nav {
+  margin: 8rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 240px;
+}
+
+.credit-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-icon {
+  width: 16px;
+}
+
+.social-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.copyright {
+  font-size: 12px;
+  text-align: center;
+}
+
 /* service images */
 .residential_img {
   background-image: url('assets/kitchen-painted-white.webp');
