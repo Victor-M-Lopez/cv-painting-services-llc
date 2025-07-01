@@ -960,6 +960,13 @@ footer {
   visibility: visible;
 }
 
+/* 1190px */
+@media (max-width: 1190px) {
+  .card-container {
+    justify-content: center;
+  }
+}
+
 
 /* 1060px */
 @media (max-width: 1060px) {
@@ -1009,118 +1016,50 @@ footer {
   .interior_img-wrapper {
     width: 100%;
   }
+
+  .footer-nav {
+    gap: 80px;
+  }
 }
 
-/* 980px */
-@media (max-width: 980px) {
+/* 775px */
 
-}
-
-/* 880px */
-
-@media (max-width: 880px) {
-  .keypoints-container {
-    flex-direction: column;
-  }
-
-  .service-container {
-    grid-template-columns: repeat(1, 250px);
-  }
-
-  .copyright {
+@media (max-width: 775px) {
+  .text_container {
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
-    left: 2px;
-    right: 2px;
   }
 
-  .locations {
-    width: calc(100% / 2);
+  .buttons_container {
+    justify-content: center;
   }
 
-  .step {
-    width: 100%;
+  .home-services {
+    display: none;
   }
 
-  .color_text-container {
-    right: 24px;
-    width: 90%;
+  .home-reviews {
+    left: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
   }
 
-  .color_text-container h3 {
-    font-size: 24px;
+  .footer-nav {
+    flex-direction: column;
+    gap: 32px;
   }
 
-  .color_img-wrapper {
-    height: 400px;
-  }
-
-  .color_img {
-    height: 400px;
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 /* 650px */
 @media (max-width: 650px) {
-  #contact_btn,
-  #service_contact-btn,
-  .light_green-btn {
-    padding: 8px 16px;
-  }
-
-  #web_title {
-    font-size: 24px;
-    text-align: center;
-  }
-
-  .text_container {
-    left: 24px;
-    right: 24px;
-    text-align: center;
-  }
-
-  .text_container h2 {
-    font-size: 14px;
-  }
-
-  p, a, button {
-    font-size: 12px;
-  }
-
-  .nav_icon,
-  .modal_btn {
-    width: 18px;
-  }
-
-  #company_logo {
-    width: 60px;
-  }
-
-  nav {
-    padding: 12px 8px;
-  }
-
-  .text_container {
-    bottom: 275px;
-  }
-
-  .home_line {
-    bottom: 250px;
-  }
-
-  .buttons_container {
-    bottom: 125px;
-    flex-direction: column;
-    right: 24px;
-  }
-  
-  .contact_row {
-    width: 95%;
-    padding: 24px 12px;
-  }
-
-  .contact_icon {
-    width: 14px;
-  } 
+   
 
   .exit_btn {
     right: 32px;
