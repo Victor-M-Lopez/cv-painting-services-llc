@@ -766,6 +766,11 @@ footer {
   text-align: center;
 }
 
+.review-btn {
+  display: flex;
+  justify-content: center;
+}
+
 /* service images */
 .residential_img {
   background-image: url('assets/kitchen-painted-white.webp');
