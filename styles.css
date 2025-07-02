@@ -420,6 +420,11 @@ nav {
 }
 
 /* services */
+.sub-title {
+  font-weight: 300;
+  font-size: 16px;
+}
+
 #services {
   position: relative;
   background-color: var(--light-yellow-color);
@@ -788,6 +793,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 80px;
 }
 
 .exterior_service-container {
@@ -820,8 +826,8 @@ footer {
 
 .special_service {
   position: relative;
-  background-color: var(--light-yellow-color);
-  color: #000;
+  background-color: var(--blue-color);
+  color: #fff;
   width: 350px;
   padding: 24px 16px;
   margin-top: 32px;
@@ -891,7 +897,7 @@ footer {
   text-align: end;
 }
 
-.color_text-container h3 {
+.color-title {
   font-size: 56px;
 }
 
@@ -1018,6 +1024,18 @@ footer {
   }
 }
 
+/* 950px */
+@media (max-width: 950px) {
+  .color_text-container {
+    right: 24px;
+    width: 90%;
+  }
+
+  .step {
+    width: 100%;
+  }
+}
+
 /* 775px */
 
 @media (max-width: 775px) {
@@ -1107,5 +1125,14 @@ footer {
 
   .footer-row {
     padding: 0px;
+  }
+
+  .color_img {
+    height: 400px;
+  }
+
+  .color-title {
+    font-size: 32px;
+    margin-bottom: 16px;
   }
 }
